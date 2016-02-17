@@ -3,6 +3,7 @@ use warnings;
 use inc::Module::Install    1.06;
 use Module::Install::XSUtil 0.41;
 
+$Module::Install::AUTHOR = 0 if $ENV{TRAVIS};
 
 all_from 'lib/Data/Util.pm';
 
